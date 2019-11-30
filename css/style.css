@@ -1,0 +1,25 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: url("/img/background.jpg") no-repeat center;
+  background-size: cover;
+  height: 700px;
+}
+
+.main__nav {
+  display: flex;
+  border: 3px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */
