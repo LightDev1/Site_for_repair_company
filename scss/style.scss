@@ -196,7 +196,6 @@ $fontWidth: 12px;
                     align-content: flex-end;
                     font-size: $fontWidth;
                     margin: 0;
-
                 }
             }
             
@@ -249,3 +248,116 @@ $fontWidth: 12px;
         }
     }
 }
+
+@mixin notBorder {
+    border: none;
+}
+
+.ex__apply {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    min-height: 800px;
+    background-color: #EBEBEB;
+    margin-top: 50px;
+
+    .text__apply {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        // margin-top: 50px;
+        h2 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+
+    .form__container {
+        display: flex;
+        width: 70%;
+        margin-top: -150px;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 5px solid #ffffff;
+        height: 400px;
+        width: 100%;
+
+        .items__container {
+            height: 100%;
+            align-items: center;
+        }
+
+        .form__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 40px;
+            width: 75%;
+            margin-left: 50px;
+            
+            
+            strong {
+            font-size: 15px;
+            font-weight: 500;
+            color: #000000;
+            }
+
+            select {
+                margin-top: 10px;
+                height: 45px;
+                color: #C2C2C2;
+                width: 100%;
+                @include notBorder();
+            }
+
+            input {
+                height: 45px;
+                width: 100%;
+                margin-top: 10px;
+                @include notBorder();
+
+                &::-webkit-input-placeholder {
+                     color: #C2C2C2; 
+                }
+            }
+
+        
+            .details {
+                width: 100%;
+                resize: none;
+                height: 159px;
+                margin-top: 11px;
+                @include notBorder();
+
+                &::-webkit-input-placeholder {
+                    color: #C2C2C2; 
+               }
+            }
+
+            .submit {
+                height: 60px;
+                margin-top: 13px;
+                background-color: #D91233;
+                @include notBorder();
+                border-radius: 100px;
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+

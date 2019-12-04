@@ -100,6 +100,7 @@
                 </div>
             </div>
 
+
             <div class="ex__apply">
                 <div class="text__apply">
                     <h2>Подробная заявка</h2>
@@ -108,46 +109,52 @@
 
                 <div class="form__container">
                     <form>
-                       <p class="mark__container">
-                           <strong>Марка:</strong>
-                           <select name="mark" id="mark" class="mark">
-                                <option value="" disabled selected>Выберите марку</option>
-                           </select>
-                       </p>
-                       <p class="model__container">
-                           <strong>Модель:</strong>
-                           <select name="model" id="model" class="model">
-                                <option value="" disabled selected>Выберите модель</option>
-                           </select>
-                        </p>
-                        <p class="year__container">
-                                <strong>Год выпуска:</strong>
-                                <select name="year" id="year" class="year">
-                                     <option value="" disabled selected>Выберите год</option>
+                        <div class="items__container">
+                            <p class="form__item">
+                                <strong>Марка:</strong>
+                                <select name="mark" id="mark" class="mark">
+                                     <option value="" disabled selected>Выберите марку</option>
                                 </select>
-                        </p>
-                        <p class="details__container">
-                            <strong>Необходимые детали:</strong>
-                            <textarea name="details" id="details" cols="30" rows="10" placeholder="Введите" class="details">
-
-                            </textarea>
-                        </p>
-
-                        <p class="name__container">
-                                <strong>Ваше имя:</strong>
-                                <input type="text" name="name" id="name" placeholder="Введите" class="name">
-                        </p>
-                        <p class="tell__container">
+                            </p>
+                            <p class="form__item">
+                                <strong>Модель:</strong>
+                                <select name="model" id="model" class="model">
+                                     <option value="" disabled selected>Выберите модель</option>
+                                </select>
+                             </p>
+                             <p class="form__item">
+                                     <strong>Год выпуска:</strong>
+                                     <select name="year" id="year" class="year">
+                                          <option value="" disabled selected>Выберите год</option>
+                                     </select>
+                             </p>
+                        </div>
+                        <div class="items__container">
+                            <p class="form__item">
+                                <strong>Необходимые детали:</strong>
+                                <textarea name="details" id="details" placeholder="Введите" class="details">
+                                </textarea>
+                            </p>
+    
+                            <p class="form__item">
+                                    <strong>Ваше имя:</strong>
+                                    <input type="text" name="name" id="name" placeholder="Введите" value="Введите" class="name">
+                            </p>
+                        </div>
+                        <div class="items__container">
+                            <p class="form__item">
                                 <strong>Ваш телефон:</strong>
                                 <input type="tel" name="tell" id="tell" placeholder="Введите" class="tell">
                         </p>
 
-                        <p class="mail__container">
+                        <p class="form__item">
                                 <strong>Ваш e-mail:</strong>
                                 <input type="email" name="mail" id="mail" placeholder="Введите" class="mail">
                         </p>
-
-                        <input type="submit" value="Узнать цену" class="submit">
+                        <p class="form__item">
+                            <button class="submit">Узнать цену</button>
+                        </p>
+                        </div>
                     </form>
                 </div>
             </div>
