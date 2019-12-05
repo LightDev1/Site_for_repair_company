@@ -283,7 +283,7 @@ $fontWidth: 12px;
 
     .form__container {
         display: flex;
-        width: 70%;
+        width: 75%;
         margin-top: -150px;
     }
 
@@ -316,21 +316,27 @@ $fontWidth: 12px;
             }
 
             select {
+                position: relative;
                 margin-top: 10px;
                 height: 45px;
                 color: #C2C2C2;
                 width: 100%;
+                outline: none;
+                appearance: none;
                 @include notBorder();
-            }
+        }
 
+    
             input {
                 height: 45px;
                 width: 100%;
                 margin-top: 10px;
+                outline: none;
                 @include notBorder();
 
                 &::-webkit-input-placeholder {
-                     color: #C2C2C2; 
+                     color: #C2C2C2;
+                     padding: 5px;
                 }
             }
 
@@ -340,11 +346,22 @@ $fontWidth: 12px;
                 resize: none;
                 height: 159px;
                 margin-top: 11px;
+                outline: none;
                 @include notBorder();
 
                 &::-webkit-input-placeholder {
-                    color: #C2C2C2; 
+                    color: #C2C2C2;
+                    padding: 5px; 
+                    font-size: 14px;
                }
+
+               &::-moz-input-placeholder {
+                color: #C2C2C2;
+                padding: 5px;
+                font-size: 16px;
+    
+                }
+                 
             }
 
             .submit {
@@ -356,8 +373,134 @@ $fontWidth: 12px;
                 color: #ffffff;
                 font-size: 18px;
                 font-weight: 700;
+                outline: none;
             }
         }
     }
 }
 
+.auto__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    min-height: 1100px;
+    
+    .auto__text {
+        margin-top: 45px;
+        h2 {
+            font-size: 30px;
+            margin: 0;
+        }
+    }
+
+    .auto__marks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 65%;
+        height: 350px;
+    }
+
+    .video__about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        height: 500px;
+        margin-bottom: 45px;
+
+        .video__text {
+            h2 {
+                font-size: 25px;
+            }
+        }
+
+        .container {
+            margin-top: 20px;
+            height: 450px;
+            width: 85%;
+            border: 5px solid #F2F2F2;
+
+            .video {
+                background-color: #3B3B3B;
+                height: 93%;
+                width: 96%;
+                margin: 15px auto;
+                
+            }
+        }
+    }
+}
+
+.clients__about {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EBEBEB;
+    height: 100vh;
+    min-height: 580px;
+    width: 100%;
+
+    .clients__text {
+        margin-top: 40px;
+        font-size: 23px;
+    }
+
+    .clients__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 66%;
+        height: 10vh;
+        min-height: 340px;
+        margin-bottom: 80px;
+        
+
+        .client__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            
+            .client {
+                
+                display: flex;
+                font-size: 12px;
+    
+                .img__container {
+                    
+
+                    img {
+                        margin-top: 15px;
+                        width: 90%;
+                        height: 55%;
+                    }
+                }
+
+                .text__container {
+                    .full__name {
+                        color: #757575;
+                        font-size: 11px;
+                        font-weight: 700;
+                    }
+
+                    .problem {
+                        color: #D91233;
+                        font-weight: 800;
+                    }
+
+                    .descrp {
+                        color: #2B2B2B;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+    }
+}

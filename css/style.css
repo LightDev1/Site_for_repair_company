@@ -241,7 +241,7 @@ body {
 }
 .ex__apply .form__container {
   display: flex;
-  width: 70%;
+  width: 75%;
   margin-top: -150px;
 }
 .ex__apply form {
@@ -270,30 +270,43 @@ body {
   color: #000000;
 }
 .ex__apply form .form__item select {
+  position: relative;
   margin-top: 10px;
   height: 45px;
   color: #C2C2C2;
   width: 100%;
+  outline: none;
+  appearance: none;
   border: none;
 }
 .ex__apply form .form__item input {
   height: 45px;
   width: 100%;
   margin-top: 10px;
+  outline: none;
   border: none;
 }
 .ex__apply form .form__item input::-webkit-input-placeholder {
   color: #C2C2C2;
+  padding: 5px;
 }
 .ex__apply form .form__item .details {
   width: 100%;
   resize: none;
   height: 159px;
   margin-top: 11px;
+  outline: none;
   border: none;
 }
 .ex__apply form .form__item .details::-webkit-input-placeholder {
   color: #C2C2C2;
+  padding: 5px;
+  font-size: 14px;
+}
+.ex__apply form .form__item .details::-moz-input-placeholder {
+  color: #C2C2C2;
+  padding: 5px;
+  font-size: 16px;
 }
 .ex__apply form .form__item .submit {
   height: 60px;
@@ -303,6 +316,107 @@ body {
   border-radius: 100px;
   color: #ffffff;
   font-size: 18px;
+  font-weight: 700;
+  outline: none;
+}
+
+.auto__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  min-height: 1100px;
+}
+.auto__container .auto__text {
+  margin-top: 45px;
+}
+.auto__container .auto__text h2 {
+  font-size: 30px;
+  margin: 0;
+}
+.auto__container .auto__marks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 65%;
+  height: 350px;
+}
+.auto__container .video__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 500px;
+  margin-bottom: 45px;
+}
+.auto__container .video__about .video__text h2 {
+  font-size: 25px;
+}
+.auto__container .video__about .container {
+  margin-top: 20px;
+  height: 450px;
+  width: 85%;
+  border: 5px solid #F2F2F2;
+}
+.auto__container .video__about .container .video {
+  background-color: #3B3B3B;
+  height: 93%;
+  width: 96%;
+  margin: 15px auto;
+}
+
+.clients__about {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EBEBEB;
+  height: 100vh;
+  min-height: 580px;
+  width: 100%;
+}
+.clients__about .clients__text {
+  margin-top: 40px;
+  font-size: 23px;
+}
+.clients__about .clients__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 66%;
+  height: 10vh;
+  min-height: 340px;
+  margin-bottom: 80px;
+}
+.clients__about .clients__list .client__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.clients__about .clients__list .client__container .client {
+  display: flex;
+  font-size: 12px;
+}
+.clients__about .clients__list .client__container .client .img__container img {
+  margin-top: 15px;
+  width: 90%;
+  height: 55%;
+}
+.clients__about .clients__list .client__container .client .text__container .full__name {
+  color: #757575;
+  font-size: 11px;
+  font-weight: 700;
+}
+.clients__about .clients__list .client__container .client .text__container .problem {
+  color: #D91233;
+  font-weight: 800;
+}
+.clients__about .clients__list .client__container .client .text__container .descrp {
+  color: #2B2B2B;
   font-weight: 700;
 }
 
