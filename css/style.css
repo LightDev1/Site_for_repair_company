@@ -420,4 +420,151 @@ body {
   font-weight: 700;
 }
 
+.consultation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  min-height: 600px;
+  background-color: #DBDBDB;
+}
+.consultation .consult__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.consultation .consult__text h2 {
+  margin: 0;
+  font-size: 30px;
+}
+.consultation .consult__text p {
+  font-weight: 500;
+}
+.consultation .order__consult {
+  width: 60%;
+  margin-bottom: 50px;
+}
+.consultation form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  border: 5px solid #ffffff;
+}
+.consultation form .inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-top: 45px;
+}
+.consultation form .inputs .inputs__item {
+  width: 46%;
+}
+.consultation form .inputs .inputs__item strong {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+.consultation form .inputs .inputs__item .input {
+  height: 45px;
+  width: 100%;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+}
+.consultation form .inputs .inputs__item .input::-webkit-input-placeholder {
+  color: #C2C2C2;
+  padding: 5px;
+}
+.consultation form .submit {
+  width: 45%;
+  height: 60px;
+  margin-top: 13px;
+  background-color: #D91233;
+  border: none;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  margin-bottom: 50px;
+}
+
+.contacts__container {
+  background: url("/img/map.png") no-repeat center;
+  height: 10vh;
+  min-height: 550px;
+  background-size: cover;
+}
+.contacts__container .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #D91233;
+  width: 35%;
+  height: 300px;
+  margin: 50px auto;
+}
+.contacts__container .contacts h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.contacts__container .contacts .contacts__item {
+  color: #ffffff;
+  font-size: 20px;
+}
+.contacts__container .contacts #non_under {
+  text-decoration: none;
+}
+.contacts__container .contacts #last {
+  margin-bottom: 50px;
+}
+
+.footer {
+  height: 10vh;
+  min-height: 100px;
+}
+.footer .main__nav {
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  width: 60%;
+  height: 10vh;
+  justify-content: space-between;
+}
+.footer .main__nav .logo__item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: #717171;
+  font-size: 25px;
+}
+.footer .main__nav .contacts__item {
+  display: flex;
+  height: 30%;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+}
+.footer .main__nav .contacts__item .tel {
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  font-weight: 600;
+}
+.footer .main__nav .contacts__item a {
+  margin-top: 2px;
+  color: #D91233;
+  font-weight: 700;
+  font-size: 12px;
+}
+
 /*# sourceMappingURL=style.css.map */
