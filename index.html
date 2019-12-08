@@ -8,6 +8,63 @@
     </head>
 
     <body>
+        <div class="main__overlay">
+            <div class="order__tnx">
+                <div class="del__container">
+                    <img src="img/del.png" alt="" class="del">
+                </div>
+                <h3>Спасибо за вашу заявку!</h3>
+                <p>Мы свяжемся с Вами в ближайшее <span>время! </span></p>
+            </div>
+            <div class="order__call">
+                <div class="del__container">
+                    <img src="img/del.png" alt="" class="del">
+                </div>
+                <div class="call__text">
+                    <h3>Заказ обратного звонка</h3>
+                    <p>Оставьте заявку и мы Вам перезвоним! </p>
+                </div>
+                <div class="call__inputs__container">
+                    <div class="call__input">
+                        <input type="text" placeholder="Ваше имя">
+                        <img src="img/male.png" alt="">    
+                    </div>
+                    <div class="call__input">
+                        <input type="text" placeholder="Ваш телефон">
+                        <img src="img/phone.png" alt=""> 
+                        </div>
+                    <div class="call__input">
+                        <input type="text" placeholder="Ваша почта">
+                        <img src="img/mail.png" alt=""> 
+                    </div>
+                </div>
+                <div class="call__sumbit">
+                    <input type="submit" value="Отправить заявку" class="submit__btn">
+                </div>
+            </div>
+            <div class="order__quick">
+                <div class="del__container">
+                    <img src="img/del.png" alt="" class="del">
+                </div>
+                <div class="quicl__text">
+                    <h3>Быстрая заявка</h3>
+                    <p>Оставьте заявку и мы Вам перезвоним! </p>
+                </div>
+                <div class="call__inputs__container">
+                    <div class="call__input">
+                        <input type="text" placeholder="Ваше имя">
+                        <img src="img/male.png" alt="">    
+                    </div>
+                    <div class="call__input">
+                        <input type="text" placeholder="Ваш телефон">
+                        <img src="img/phone.png" alt=""> 
+                    </div>
+                </div>
+                <div class="quick__sumbit">
+                    <input type="submit" value="Отправить заявку" class="quick__btn">
+                </div>
+            </div>
+        </div>
         <header class="header">
             <div class="wrap"></div>
             <nav class="main__nav">
@@ -17,7 +74,7 @@
 
                 <div class="contacts__item">
                     <a href="tel:88002323212" class="tel">8 800 232 32 12</a>
-                    <a href="#">Заказать обратный звонок</a>
+                    <a href="#" class="call__bnt">Заказать обратный звонок</a>
                 </div>
             </nav>
 
@@ -44,11 +101,11 @@
             </div>
             <div class="applies">
                 <div class="quick">
-                    <button>Быстрая заявка</button>
+                    <button class="quick__button">Быстрая заявка</button>
                     <p>Мы перезвоним Вам <br> для уточнения деталей.</p>
                 </div>
                 <div class="deep">
-                    <button>Подробная заявка</button>
+                    <button><a href="#ex__apply">Подробная заявка</a></button>
                     <p>Заполните подробную <br>
                         заявку онлайн!</p>
                 </div>
@@ -105,7 +162,7 @@
 
             <div class="ex__apply">
                 <div class="text__apply">
-                    <h2>Подробная заявка</h2>
+                    <h2 id="ex__apply">Подробная заявка</h2>
                     <p>Заполните форму и получите максимально точную цену!</p>
                 </div>
 
@@ -289,7 +346,7 @@
                                 <input type="text" class="input">
                             </p>
                         </div>
-                            <input type="submit" value="Заказать консультацию" class="submit">
+                           <button class="submit__consult">Заказать консультацию</button>
                     </form>
                 </div>
             </div>
@@ -312,6 +369,8 @@
                     <div class="contacts__item">
                         <a href="tel:88002323212" class="tel">8 800 232 32 12</a>
                         <a href="#">Заказать обратный звонок</a>
+
+                    <script src="./js/script.js"></script>
                     </div>
             </footer>
         </main>

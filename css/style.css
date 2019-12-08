@@ -5,6 +5,171 @@
 body {
   font-family: sans-serif;
   margin: 0;
+  position: relative;
+  height: 100vh;
+  min-height: 4840px;
+}
+
+.main__overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+  display: none;
+}
+
+.order__tnx {
+  margin: 250px auto;
+  background-color: #ffffff;
+  width: 30%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 3%;
+  position: relative;
+}
+.order__tnx .del {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.order__tnx h3 {
+  margin: 0;
+  margin-top: 45px;
+}
+.order__tnx p {
+  margin: 0;
+  margin-bottom: 45px;
+  font-size: 14px;
+}
+
+.order__call {
+  margin: 80px auto;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  width: 30%;
+  height: 9.5%;
+  position: relative;
+}
+.order__call .del {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.order__call .call__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.order__call .call__text h3 {
+  margin: 0;
+}
+.order__call .call__inputs__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+.order__call .call__inputs__container .call__input {
+  position: relative;
+}
+.order__call .call__inputs__container .call__input input {
+  height: 45px;
+  width: 300px;
+  margin-top: 10px;
+  outline: none;
+}
+.order__call .call__inputs__container .call__input input::-webkit-input-placeholder {
+  color: #C2C2C2;
+  padding: 5px;
+}
+.order__call .call__inputs__container .call__input img {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+.order__call .call__sumbit {
+  margin-bottom: 50px;
+}
+.order__call .call__sumbit input {
+  background-color: #D91233;
+  border: 2px solid #D91233;
+  padding: 15px 75px;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.order__quick {
+  margin: 80px auto;
+  margin-top: 80px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  width: 30%;
+  height: 8%;
+  position: relative;
+}
+.order__quick .del {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.order__quick .quicl__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.order__quick .quicl__text h3 {
+  margin: 0;
+}
+.order__quick .call__inputs__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+.order__quick .call__inputs__container .call__input {
+  position: relative;
+}
+.order__quick .call__inputs__container .call__input input {
+  height: 45px;
+  width: 300px;
+  margin-top: 10px;
+  outline: none;
+}
+.order__quick .call__inputs__container .call__input input::-webkit-input-placeholder {
+  color: #C2C2C2;
+  padding: 5px;
+}
+.order__quick .call__inputs__container .call__input img {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+.order__quick .quick__sumbit {
+  margin-bottom: 50px;
+}
+.order__quick .quick__sumbit input {
+  background-color: #D91233;
+  border: 2px solid #D91233;
+  padding: 15px 75px;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 18px;
 }
 
 .header {
@@ -141,6 +306,10 @@ body {
   border-radius: 100px;
   color: #ffffff;
   font-size: 18px;
+}
+.applies .deep button a {
+  color: #ffffff;
+  text-decoration: none;
 }
 .applies .deep p {
   font-size: 12px;
@@ -474,7 +643,7 @@ body {
   color: #C2C2C2;
   padding: 5px;
 }
-.consultation form .submit {
+.consultation form .submit__consult {
   width: 45%;
   height: 60px;
   margin-top: 13px;
@@ -561,7 +730,195 @@ body {
   font-size: 12px;
 }
 
+@media (max-width: 991px) {
+  body {
+    min-height: 5640px;
+  }
+
+  .order__call {
+    width: 50%;
+  }
+
+  .order__tnx {
+    width: 50%;
+  }
+
+  .order__quick {
+    width: 50%;
+  }
+
+  .main__nav .logo__item {
+    font-size: 23px;
+  }
+  .main__nav .contacts__item .tel {
+    font-size: 20px;
+  }
+
+  .applies .quick button {
+    background-color: transparent;
+    border: 1px solid #D91233;
+    padding: 10px 15px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  .applies .deep button {
+    background-color: transparent;
+    border: 1px solid #D91233;
+    padding: 10px 15px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  .about .first__disc {
+    width: 75% !important;
+  }
+  .about .sec__disc {
+    width: 50% !important;
+  }
+
+  .ex__apply {
+    height: 10vh;
+    min-height: 1500px;
+    justify-content: space-around;
+  }
+  .ex__apply .text__apply h2 {
+    font-size: 20px;
+  }
+  .ex__apply .text__apply p {
+    font-size: 12px;
+  }
+  .ex__apply .form__container {
+    display: flex;
+    width: 55%;
+    margin-top: -150px;
+  }
+  .ex__apply form {
+    height: 1200px;
+    flex-wrap: nowrap;
+  }
+
+  .auto__container {
+    min-height: 1000px;
+  }
+  .auto__container .auto__text h2 {
+    font-size: 20px;
+  }
+  .auto__container .auto__marks {
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    height: 350px;
+  }
+  .auto__container .auto__marks .first__list {
+    display: flex;
+  }
+  .auto__container .auto__marks .first__list img {
+    flex: 0 0 10%;
+  }
+  .auto__container .auto__marks .sec__list {
+    display: flex;
+  }
+  .auto__container .auto__marks .sec__list img {
+    flex: 0 0 10%;
+  }
+  .auto__container .auto__marks .third__list {
+    display: flex;
+  }
+  .auto__container .auto__marks .third__list img {
+    flex: 0 0 10%;
+  }
+  .auto__container .video__about .video__text h2 {
+    font-size: 16px;
+  }
+  .auto__container .video__about .container {
+    height: 400px;
+    width: 100%;
+  }
+  .auto__container .video__about .container .video {
+    height: 93%;
+  }
+
+  .clients__about {
+    min-height: 800px;
+  }
+  .clients__about .clients__text {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .clients__about .clients__list {
+    min-height: 300px;
+    margin-bottom: 350px;
+  }
+
+  .consultation .order__consult .submit__consult {
+    font-size: 14px;
+  }
+}
 @media (max-width: 767px) {
+  .order__call .call__inputs__container .call__input {
+    position: relative;
+  }
+  .order__call .call__inputs__container .call__input input {
+    height: 45px;
+    width: 200px;
+    margin-top: 10px;
+    outline: none;
+  }
+  .order__call .call__inputs__container .call__input input::-webkit-input-placeholder {
+    color: #C2C2C2;
+    padding: 5px;
+  }
+  .order__call .call__text p {
+    font-size: 12px;
+  }
+  .order__call .call__sumbit input {
+    padding: 15px 45px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  body {
+    min-height: 5640px;
+  }
+
+  .order__call {
+    width: 80%;
+  }
+
+  .order__tnx {
+    width: 80%;
+  }
+  .order__tnx h3 {
+    font-size: 18px;
+  }
+  .order__tnx p {
+    font-size: 12px;
+  }
+
+  .order__quick {
+    width: 60%;
+  }
+  .order__quick .quicl__text p {
+    font-size: 12px;
+  }
+  .order__quick .call__inputs__container .call__input input {
+    height: 45px;
+    width: 200px;
+    font-size: 16px;
+  }
+  .order__quick .quick__sumbit {
+    margin-bottom: 50px;
+  }
+  .order__quick .quick__sumbit input {
+    padding: 15px 45px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
   .main__nav .logo__item {
     display: flex;
     align-items: center;
@@ -687,11 +1044,21 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 65%;
+    width: 60%;
     height: 350px;
   }
   .auto__container .auto__marks .first__list {
+    display: flex;
+    flex-wrap: wrap;
     order: 3;
+  }
+  .auto__container .auto__marks .sec__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .auto__container .auto__marks .third__list {
+    display: flex;
+    flex-wrap: wrap;
   }
   .auto__container .video__about .video__text {
     margin-top: 100px;
@@ -765,7 +1132,7 @@ body {
     height: 40px;
     width: 100%;
   }
-  .consultation form .submit {
+  .consultation form .submit__consult {
     width: 75%;
     height: 50px;
     font-size: 14px;
